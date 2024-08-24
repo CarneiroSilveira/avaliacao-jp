@@ -1,8 +1,15 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333333;
+    text-align: center;
+}
+
+h2 {
+    color: #333333;
 }
 
 header {
@@ -29,77 +36,132 @@ nav ul li a {
 
 section {
     padding: 2em;
-}
-
-
-.last-section {
-    margin-bottom: 65px;
+    max-width: 800px;
+    margin: auto;
 }
 
 .project {
     border: 1px solid #ddd;
     padding: 1em;
     margin-bottom: 1em;
+    background-color: #fff;
+    border-radius: 8px;
 }
 
 footer {
-    background: #333;
-    color: white;
+    background: #333333;
+    color: #ffffff;
     text-align: center;
-    padding: 1em;
+    padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-top: 1em;
-}
-
-form input, form textarea {
-    padding: 0.5em;
-    margin-top: 0.5em;
-}
-
-form button {
-    margin-top: 1em;
-    padding: 0.5em;
-    background: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.img-perfil{
-    border-radius: 100%;
+img {
+    border-radius: 50%;
     width: 150px;
     height: 150px;
     background-color: #333;
+    display: block;
+    margin: auto;
 }
 
-.img-perfil img {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+a {
+    color: #0066cc;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
-a:link, a:visited {
-	text-decoration: none
-}
 a:hover {
-	text-decoration: underline;
-	color: blue;
+    color: #ff6600;
 }
-a:active {
-	text-decoration: none
-}
+
 svg {
     margin-top: 5px;
     height: 14px;
     width: 14px;
+    vertical-align: middle;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.card .img-perfil {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.card ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.card ul li a {
+    color: #0066cc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card ul li a:hover {
+    color: #ff6600;
+}
+
+section#sobre {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+
+li {
+    list-style-type: none;
+}
+
+.image-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    max-width: 350px;
+    margin-top: 50px;
+}
+
+.image-card:hover {
+    transform: scale(1.05);
+}
+
+.image-card img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.image-card figcaption {
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.1em;
 }
